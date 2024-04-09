@@ -1,0 +1,77 @@
+<table id="contextBroadcast" style="width:700px;height:560px;border:0px solid #b5d7e8;margin:0;padding:0;margin-left:auto;margin-right:auto;">
+    <tr>
+        <td id="trackerTd" colspan="2" style="background-color:#b5d7e8;height:80px;margin:0;padding:0;padding-left:5px;">
+            <div id="trackerDiv" class="scroll"></div>
+        </td>
+        <td id="menuTd" style="background-color:#b5d7e8;width:180px;">
+            <table>
+                <tr>
+                    <td id="selectMenu">
+                        <select id="contextLibs" name="contextLibs" title="Context Library"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="showNavigator" style="color:#ffffff;"></label>
+                        <input type="checkbox" id="showNavigator"/>
+                        <label id="contextsChooseL" for="contextsChoose" class="contextsChoose">Actual</label>                                
+                        <input type="checkbox" id="contextsChoose"/>
+                        <button id="symbologyInfo" class="ui-button ui-widget ui-corner-all ui-button-icon-only" style="width:20px;height:20px;" title="Symbology Platform Info" onclick="window.open('https://sites.google.com/view/svgsymbology-platform/home', '_blank');">
+                            <span class="ui-icon symbology" style="width:20px;height:20px;"></span>
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td id="rootTd" style="background-color:#b5d7e8;width:55px !important;height:500px;margin:0;padding:0;padding-left:1px;vertical-align:top;">
+            <table id="rootTbl" style="width:55px !important;">
+                <thead style="display:none;">
+                    <tr>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody id="rootContent" class="ui-widget-content">
+                </tbody>
+            </table>
+        </td>
+        <td id="contentTd" style="background-color:#ffffff;margin:0;padding:0;vertical-align:0px;">
+            <iframe id="contentFrm" name="contentFrm" scrolling="no" style="width:500px;height:500px;margin:0;padding:0;border:1px;"></iframe>
+        </td>
+        <td id="navigatorTd" style="background-color:#b5d7e8;width:180px;vertical-align:top;">
+            <div id="navigator">
+                <table>
+                    <tr>
+                        <td><a href="javascript:navigateConsole('deviceViewportConsole.html');">View Port Console</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:navigateConsole('symbologyConsole.html');">Symbology Console</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:navigateConsole('symbolConsole.html');">Symbol Console</a></td>
+                    </tr>        
+                    <tr>
+                        <td><a href="javascript:navigateConsole('channel.html');">Channel</a></td>
+                    </tr>                              
+                    <tr>
+                        <td><a href="javascript:navigateConsole('context.svg');">Context</a></td>
+                    </tr>                             
+                    <tr>
+                        <td><a href="javascript:location.reload(true);">Refresh</a></td>
+                    </tr>
+                </table>
+            </div>
+            <table id="libContexts" style="width:185px;height:500px;">
+                <thead style="display:none;">
+                    <tr>
+                        <th>Image</th>
+                        <th>Context</th>
+                    </tr>
+                </thead>
+                <tbody id="navigatorContent" class="ui-widget-content">
+                </tbody>
+            </table>
+        </td>                
+    </tr>
+</table>

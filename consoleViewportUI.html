@@ -1,0 +1,52 @@
+<div style="z-index:0;position:absolute;left:0px;top:0px;background-color:#b5d7e8;">
+    <table style="width:920px;">
+        <tr>
+            <td class="right"><label class="title">Shrink Fit : </label></td><td><label id="shrinkFitVar" class="txt" title="Repository Default Shrink To Fit Configuration"></label></td>
+            <td class="right"><label class="title">Expand Fit : </label></td><td><label id="expandFitVar" class="txt" title="Repository Default Expand To Fit Configuration"></label></td>
+            <td class="right"><label class="title">Fit Width : </label></td><td><label id="fitWidthVar" class="txt" title="Repository Default Viewport Width Configuration"></label></td>
+            <td class="right"><label class="title">Fit Height : </label></td><td><label id="fitHeightVar" class="txt" title="Repository Default Viewport Height Configuration"></label></td>
+            <td></td>
+            <td>
+                <a href="javascript:navigate('contextConsole.html');" title="Browse Contexts Console">Context</a>
+            </td>
+            <td>
+                <a href="javascript:navigate('symbologyConsole.html');" title="Browse Symbology Console">Symbology</a>
+            </td>                    
+            <td>
+                <a href="javascript:navigate('symbolConsole.html');" title="Browse Symbols Console">Symbols</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="right"><label class="title" for="moveX">Move X : </label></td><td><input id="moveX" name="value" title="Testing Viewport Location Independent Of Device"></td>
+            <td class="right"><label class="title" for="moveY">Move Y : </label></td><td><input id="moveY" name="value" title="Testing Viewport Location Independent Of Device"></td>
+            <td class="right"><label class="title" for="fitWidth">Fit Width : </label></td><td><input id="fitWidth" name="value" title="Device Viewport Width"></td>
+            <td class="right"><label class="title" for="fitHeight">Fit Height : </label></td><td><input id="fitHeight" name="value" title="Device Viewport Height"></td>
+            <td class="right"><label class="title" for="rotate">Rotate : </label></td><td><input id="rotate" name="value" title="Test Rotation Re-Proportioning"></td>     
+            <td>
+                <span style="color:#0178af;font-weight:bold;" title="Aspect Ration : 900X600">900X600</span>
+            </td>
+            <td>
+                <button id="submit" title="Run SVG In Device Viewport">Preview</button>
+            </td>                
+        </tr>
+        <tr>
+            <td class="right"><label class="title" for="url">URL : </label></td>
+            <td colspan="9"><input id="url" title="Browse SVG In Device View Port" onclick="openUrl();" style="cursor:pointer;" /></td>
+            <td><a href="javascript:navigate('context.html');" title="Browse Context">Context</a></td>
+            <td><a href="javascript:navigate('channel.html');" title="Browse Channel Console">Channel</a></td>
+        </tr>
+    </table>
+</div>    
+<div id="gridDiv" class="scroller" style="z-index:0;position:absolute;left:0px;top:70px;">
+    <iframe id="grid" name="grid" class="scroller" width="920" height="620" frameBorder="0" style="border:0px;" allowtransparency="true">
+    </iframe>
+</div>
+<div id="graphicDiv" class="scroller" style="z-index:1;position:absolute;left:0px;top:70px;">
+    <iframe id="preview" name="preview" class="scroller" width="920" height="620" frameBorder="0" style="border:0px;" allowtransparency="true" src="{**URL**}">
+    </iframe>
+</div>
+<div id="symbologyLinkDiv" style="z-index:1;position:absolute;left:0px;top:700px;text-align: center;">
+    <table style="width:920px;"><tr><td style="width:50%;text-align:right;"><img src="@images/symbology-logo.png" width="20px" height="20px" alt="Symbology" title="Symbology Info" style="cursor:pointer;" onclick="window.open('https://sites.google.com/view/svgsymbology-platform/home', '_blank');" /></td><td style="width:50%;"><a href="https://sites.google.com/view/svgsymbology-platform/home" target="_blank" title="Symbology Info">Symbology</a></td></tr></table>
+</div>
+<div id="viewportDiv" style="z-index:3;position:absolute;left:10px;top:80px;">
+</div>

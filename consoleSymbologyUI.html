@@ -1,0 +1,51 @@
+<table id="contextBroadcast" style="width:700px;height:540px;border: 1px solid #C0DBEE;margin:0;padding:0;margin-left:auto;margin-right:auto;">
+    <tr>
+        <td id="navigatorTd" style="background-color:#b5d7e8;height:80px;margin:0;padding:0;padding-left:5px;">
+            <div id="navigator">
+                <table style="width:100%;">
+                    <tr>
+                        <td style="text-align: center;">
+                            <table style="margin:auto;"><tr><td><img src="@images/symbology-logo.png" width="20px" height="20px" alt="Symbology" title="Symbology Info" style="cursor:pointer;" onclick="window.open('https://sites.google.com/view/svgsymbology-platform/home', '_blank');" /></td><td><a href="https://sites.google.com/view/svgsymbology-platform/home" target="_blank" title="Symbology Info">Symbology</a></td></tr></table>
+                        </td>                                
+                        <td style="text-align: center"><a href="javascript:navigateConsole('deviceViewportConsole.html');">View Port</a></td>
+                        <td style="text-align: center"><a href="javascript:navigateConsole('contextConsole.html');">Context Console</a></td>
+                        <td style="text-align: center"><a href="javascript:navigateConsole('symbolConsole.html');">Symbol Console</a></td>
+                        <td style="text-align: center"><a href="javascript:navigateConsole('channel.html');">Channel</a></td>                                
+                        <td style="text-align: center"><a href="javascript:location.reload(true);" title="Refresh (Cnttrl F5)">Refresh</a></td>
+                    </tr>        
+                </table>
+            </div>
+        </td>
+        <td id="menuTd" style="background-color:#b5d7e8;width:100px;">
+            <table>
+                <tr>
+                    <td id="selectMenu">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="symbologyChoose" id="symbologysChooseL" class="symbologyChoose">Actual</label>
+                        <input type="checkbox" id="symbologyChoose" title="Actual or Demo"/>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td id="symbologyTd" style="background-color:#ffffff;width:500px;height:520px;margin:0;padding:0;vertical-align:0px;">
+            <iframe id="symbologyFrm" name="symbologyFrm" scrolling="no" style="width:500px;height:520px;margin:0;padding:0;border:0px;"></iframe>
+        </td>
+        <td style="background-color:#b5d7e8;width:180px;vertical-align:top;">
+            <table id="libSymbologys" style="width:180px;">
+                <thead class="ui-widget-header" style="display:none;">
+                    <tr>
+                        <th>Image</th>
+                        <th>Symbology</th>
+                    </tr>
+                </thead>
+                <tbody id="navigatorContent" class="ui-widget-content">
+                </tbody>
+            </table>
+        </td>                
+    </tr>
+</table>

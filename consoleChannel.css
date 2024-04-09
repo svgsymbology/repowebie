@@ -1,0 +1,129 @@
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #C0DBEE;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #0178af;
+    border-radius: 5px;
+    /*border: 3px solid #C0DBEE;*/
+}
+
+div.horscroll {
+    margin:0 !important;
+    padding:0 !important;
+    height: 60px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+div.verscroll {
+    margin:0 !important;
+    padding:0 !important;
+    width: 60px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.scroller {
+    --scrollbar-color-thumb: #ffffff;
+    --scrollbar-color-track: #5ad1ff;
+    --scrollbar-width: thin;
+    --scrollbar-width-legacy: 4px;
+}
+
+.trackerImage{
+    cursor:pointer;
+    margin-right:4px !important;
+    margin-top:2px !important;
+}
+.rootImage{
+    cursor:pointer;
+    margin-right:2px !important;
+    margin-top:0px !important;
+    display:table-column;
+}            
+a {
+    color:#0178af;
+    font-weight:bold;
+    font-size:12px;
+}
+* {
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.topLeft{
+    padding: 0px 0px 5px 2px !important;
+}
+
+.glass{
+    /* background styles */
+    position: relative;
+    display: inline-block;
+
+    background-color: DARKCOLOR; /*for compatibility with older browsers*/
+    background-image: linear-gradient(DARKCOLOR,LIGHTCOLOR);
+
+    padding: 0px 0px 0px FONTMARGINLEFTGLASSpx !important; /* top right bottom left*/
+    height:50px;
+    width:50px;
+
+    color: #fff;
+    font-size: 40px;                
+    font-family: sans-serif;
+    font-weight: bold;
+
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px -2px DARKESTCOLOR;
+    text-shadow: 0px -1px DARKESTCOLOR;
+
+    cursor:pointer;
+}            
+
+.glass:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 4px);
+    height: 50%;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+
+.glass:hover{
+    background: linear-gradient(LIGHTCOLOR,LIGHTERCOLOR);
+}
+
+.mat{
+    position: relative;
+    display: inline-block;
+
+    background-color: DARKCOLOR; /*for compatibility with older browsers*/
+    border-radius: 3px;                
+    border: 2px solid DARKESTCOLOR;
+
+    padding: 0px 0px FONTMARGINBOTMATpx FONTMARGINLEFTMATpx !important; /* top right bottom left*/                
+    height:50px;
+    width:50px;
+
+    color: #fff;                
+    font-size: 40px;                
+    font-family: sans-serif;
+    font-weight: bold;
+
+    cursor:pointer;                
+}
+
+.info{
+    color:#0178af;
+    font-weight:bold;
+    font-size:12px;    
+}

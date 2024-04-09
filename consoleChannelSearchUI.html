@@ -1,0 +1,38 @@
+<div class="ui">
+    <div style="display: table;margin:0px;">
+        <div style="display: table-row;">
+            <div style="display: table-cell;padding:0px;padding-right:3px;padding-top:1px;">
+                <input id="contextName" type="text">
+            </div>
+            <div style="display: table-cell;padding:0px;text-align:right;padding-bottom:2px;">
+                <span id="searchButton" onclick="searchIfHaveParam();" class="glass" style="cursor:pointer;margin:0px;">Get Context</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top:1px;margin:0px;margin-top:1px;text-align:center;">
+        <table class="fixed_header">
+            <thead>
+                <tr>
+                    <th id="colIcon">IMG</th>
+                    <th id="colContext">Context</th>
+                </tr>
+            </thead>
+            <tbody id="contextsContent">
+            </tbody>
+        </table>
+        <br/>
+        <a href="javascript:location.reload(true);" title="Refresh (Cnttrl F5)">Refresh</a>
+    </div>
+
+    <div id="alerter" style="display:none;position:absolute;z-index:100;left:40%;top:60px;border-radius:10px !important;">
+        <table style="width:100px;background-color:#ffffff;">
+            <tr>
+                <td style="text-align: center;">
+                    Min 3 Chars<br>
+                    <span id="confirmAlert" class="yes" style="cursor:pointer;margin:0px;">OK</span>                
+                </td>
+            </tr>
+        </table>
+    </div> 
+</div>    

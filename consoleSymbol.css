@@ -1,0 +1,122 @@
+/* Works on Firefox */
+/** {
+    scrollbar-width: thin;
+    scrollbar-color: #0178af;
+}*/
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #b5d7e8;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #0178af;
+    border-radius: 5px;
+    /*border: 3px solid #C0DBEE;*/
+}
+
+.ui-tooltip {
+    color:#0178af !important;
+    font-size:12px !important;
+    max-width:400px !important;
+}            
+
+ui-widget-shadow{
+    opacity:0.4 !important;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    outline: none !important;
+}
+
+.ui-widget-content .ui-state-focus {
+    outline: none !important;
+}
+
+.ui-widget * { outline: none !important;}​
+
+.ui-button .ui-button-text {
+    font-size: 0.5em !important;
+    line-height: 0.6;
+    text-align:left;
+}            
+
+.ui-checkboxradio-radio-label{
+    padding-left: 2px;
+    padding-right: 2px;    
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.dataTables_empty{
+    display:none;
+}            
+
+table.dataTable.display tbody tr.odd > .sorting_1 {
+    background-color: #b5d7e8;
+}
+
+table.dataTable.display tbody tr.odd {
+    background-color: #b5d7e8;
+}
+
+table.dataTable.display tbody tr.even > .sorting_1 {
+    background-color: #b5d7e8;
+}
+
+table.dataTable.display tbody tr.even {
+    background-color: #b5d7e8;
+} 
+
+.option_class {
+    font-size: 0.7em !important;
+    color:#0178af !important;
+}
+
+.header-view-logo {
+    vertical-align: middle;
+}
+
+.symbols-icon {
+    fill: #0178af;
+}
+
+#symbols-button {
+    width: 40px;
+}            
+
+select {
+    font-size: 12px !important;
+}
+
+.symbolText{
+    font-weight:bold;
+    font-size:12px;
+    color:#0178af;
+}
+
+.symbolChoose{
+    font-weight:bold;
+    font-size:12px;
+    color:#0178af;                
+}
+
+div.scroll {
+    padding: 4px;
+    width: 800px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+a{
+    color:#0178af;
+    font-weight:bold;
+    font-size:12px;
+}
+
